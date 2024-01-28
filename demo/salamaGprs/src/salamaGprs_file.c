@@ -46,9 +46,9 @@ void EventDispatch(API_Event_t* pEvent) {
 		}
 		else {
 			Network_PDP_Context_t context = {
-				.apn = "saf",
-				.userName = "",
-				.userPasswd = ""
+				.apn = "safaricom",
+				.userName = "saf",
+				.userPasswd = "1234"
 			};
 			Network_StartActive(context);
 		}
@@ -57,9 +57,9 @@ void EventDispatch(API_Event_t* pEvent) {
 	case API_EVENT_ID_NETWORK_ATTACHED:
 		Trace(2, "network attach success");
 		Network_PDP_Context_t context = {
-			.apn = "saf",
-			.userName = "",
-			.userPasswd = ""
+			.apn = "safaricom",
+			.userName = "saf",
+			.userPasswd = "1234"
 		};
 		Network_StartActive(context);
 		break;
